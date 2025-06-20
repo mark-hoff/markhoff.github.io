@@ -45,3 +45,9 @@ main {
 .contact-icons a:hover {
   color: #555;
 }
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
