@@ -25,28 +25,29 @@
 /* Side-by-side bio layout */
 .bio-wrap {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  max-width: 900px;
+  gap: 40px;
+  flex-wrap: wrap; /* This makes it stack on small screens */
+  max-width: 1000px;
   margin: 0 auto;
-  gap: 30px;
-  flex-wrap: wrap;
+  padding: 30px 20px;
 }
 
 .bio-text {
-  flex: 1;
+  flex: 1 1 400px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   color: #444;
   line-height: 1.6;
-  min-width: 250px;
 }
 
 .profile-photo {
   width: 180px;
   height: auto;
   border-radius: 4px;
-  margin-top: 5px;
+  flex-shrink: 0;
 }
 
 .address-block {
@@ -54,3 +55,4 @@
   font-size: 1em;
   color: #555;
 }
+
