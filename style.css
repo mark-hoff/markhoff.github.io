@@ -1,56 +1,56 @@
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  background: #333;
-  padding: 10px 20px;
-}
-nav a {
-  color: #fff;
-  margin-left: 15px;
-  text-decoration: none;
-}
-nav .nav-left a {
-  font-weight: bold;
-}
-nav .nav-right a:hover {
-  text-decoration: underline;
-}
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-.intro {
-  margin-top: 30px;
+.name-title {
+  font-family: Georgia, serif;
+  font-size: 2.8em;
+  text-align: center;
+  color: #2b4a78;
+  margin-bottom: 10px;
 }
 
 .contact-icons {
-  margin-top: 15px;
-}
-.contact-icons a {
-  margin-right: 15px;
-  font-size: 1.5em;
-  color: #333;
-  text-decoration: none;
-}
-.contact-icons a:hover {
-  color: #555;
-}
-.profile-photo {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;     /* subtle rounding, not a circle */
-  display: block;
-  margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.contact-icons a {
+  margin: 0 10px;
+  font-size: 1.4em;
+  color: #2b4a78;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  color: #000;
+}
+
+/* Side-by-side bio layout */
+.bio-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.bio-text {
+  flex: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+  min-width: 250px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.address-block {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #555;
+}
